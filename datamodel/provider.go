@@ -12,3 +12,4 @@ type Provider struct {
 	Commission  float64 `json:"commission"`    //- комиссиявзимаемая провайдером;-
 	Currency    string  `json:"currency"`      //- валютапровайдера.
 }
+
