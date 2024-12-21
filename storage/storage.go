@@ -33,7 +33,7 @@ func GetConfig() (*Config, error) {
 	}
 	cfg.creds = credsEnv
 
-	retryCountEnv := os.Getenv("DB_RETRY_COUNT")
+	retryCountEnv := os.Getenv("DB_RETRIES_COUNT")
 	if retryCountEnv != "" {
 		retryCount, err := strconv.ParseInt(retryCountEnv, 10, 0)
 		if err != nil {
