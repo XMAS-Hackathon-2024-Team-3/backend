@@ -8,7 +8,7 @@ COPY ml ./ml/
 COPY server ./server/
 COPY storage ./storage/
 COPY notificator ./notificator/
-RUN CGO_ENABLED=0 GOOS=linux go build -o /authserver
+RUN CGO_ENABLED=0 GOOS=linux go build -o /backend
 RUN chmod +x /backend
 
 EXPOSE 8080
